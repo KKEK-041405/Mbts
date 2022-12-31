@@ -14,10 +14,10 @@ data class Post(
     @Exclude
     fun toMap(): Map<String, Any?> {
         return mapOf(
-            "uid" to FirstName,
-            "author" to LastName,
-            "title" to DateOfBirth,
-            "body" to Dipartment,
+            "FirstName" to FirstName,
+            "LastName" to LastName,
+            "DateOfBirth" to DateOfBirth,
+            "Dipartment" to Dipartment,
         )
     }
 }
