@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Mbts</string>
+    <string name="login_form">Login Form</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="pin_number">Pin number</string>
+    <string name="password">Password</string>
+    <string name="student_details">Student Details</string>
+    <string name="pinno">Pinno</string>
+    <string name="name">name</string>
+    <string name="something">         </string>
+    <string name="something1">        </string>
+    <string name="department">Department</string>
+    <string name="lname">Lname</string>
+</resources>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_drawable"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/shapeableImageView2"
+        android:layout_width="374dp"
+        android:layout_height="471dp"
+        android:layout_margin="5dp"
+        android:layout_marginBottom="10dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.432"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.272"
+        app:shapeAppearanceOverlay="@style/roundedimgview" />
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="273dp"
+        android:layout_height="49dp"
+        android:text="@string/login_form"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toTopOf="@+id/username"
+        app:layout_constraintEnd_toEndOf="@+id/shapeableImageView2"
+        app:layout_constraintStart_toStartOf="@+id/shapeableImageView2"
+        app:layout_constraintTop_toTopOf="@+id/shapeableImageView2"
+        app:layout_constraintVertical_bias="0.717" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:hint="@string/pin_number"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColorHint="#757575"
+        app:layout_constraintBottom_toTopOf="@+id/password"
+        app:layout_constraintEnd_toEndOf="@+id/shapeableImageView2"
+        app:layout_constraintStart_toStartOf="@+id/shapeableImageView2"
+        android:autofillHints="" />
+
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="250dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:textColorHint="#757575"
+        app:layout_constraintBottom_toBottomOf="@+id/shapeableImageView2"
+        app:layout_constraintEnd_toEndOf="@+id/shapeableImageView2"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="@+id/shapeableImageView2" />
+
+    <Button
+        android:id="@+id/loginbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="150dp"
+        android:text="@string/login"
+        app:layout_constraintBottom_toBottomOf="@+id/shapeableImageView2"
+        app:layout_constraintEnd_toEndOf="@+id/shapeableImageView2"
+        app:layout_constraintStart_toStartOf="@+id/shapeableImageView2" />
+
+    <Button
+        android:id="@+id/Reginsterbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/register"
+        app:layout_constraintBottom_toBottomOf="@+id/shapeableImageView2"
+        app:layout_constraintEnd_toEndOf="@+id/shapeableImageView2"
+        app:layout_constraintStart_toStartOf="@+id/shapeableImageView2"
+        app:layout_constraintTop_toBottomOf="@+id/loginbtn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
