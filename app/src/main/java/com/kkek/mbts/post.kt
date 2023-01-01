@@ -9,6 +9,7 @@ data class Post(
     var LastName: String? = "",
     var DateOfBirth: String? = "",
     var Dipartment: String? = "",
+    var Password: String? = "",
 ) {
 
     @Exclude
@@ -18,6 +19,8 @@ data class Post(
             "LastName" to LastName,
             "DateOfBirth" to DateOfBirth,
             "Dipartment" to Dipartment,
+            "Password" to Password,
+
         )
     }
 }

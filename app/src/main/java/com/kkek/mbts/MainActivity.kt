@@ -32,9 +32,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun registerpage() {
-        val intent = Intent(applicationContext,Register::class.java)
-
-
+        val intent = Intent(applicationContext,CreatePassword::class.java)
         startActivity(intent)
     }
 
